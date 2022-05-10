@@ -1,0 +1,6 @@
+
+<mat-tab-group mat-align-tabs="center" (selectedTabChange)="onTabChange($event)" >
+    <mat-tab *ngFor="let project of projects;" label="{{project.name}}">      
+        <div id="{{project.id}}"></div> 
+    </mat-tab>
+</mat-tab-group>
