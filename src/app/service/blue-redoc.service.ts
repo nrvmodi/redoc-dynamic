@@ -15,7 +15,7 @@ export class BlueRedocService {
     {
       id: '2',
         name: 'Multi broker api',
-        url: 'https://petstore.swagger.io/v2/swagger.json'
+        url: '../assets/json/swagger.json'
     },
     {
       id: '3',

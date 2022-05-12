@@ -31,7 +31,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/try-it-out.min.js"
+              "src/assets/js/try-it-out.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {

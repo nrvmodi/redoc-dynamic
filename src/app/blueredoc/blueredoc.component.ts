@@ -4,6 +4,8 @@ import { Project } from '../models/Project';
 import { BlueRedocService } from '../service/blue-redoc.service';
 import { DOCUMENT } from '@angular/common'; 
 declare var RedocTryItOut:any
+declare var $: any; // declaring jquery in this way solved the problem
+
 
 @Component({
   selector: 'app-blueredoc',
@@ -50,6 +52,8 @@ export class BlueredocComponent implements OnInit , AfterViewInit {
   }
 
   initalizeRedoc(project: Project) : void {
+    $('#redoc-container').remove();
+    $('#swagger-ui').remove();
     RedocTryItOut.init(
       project.url,
       {
