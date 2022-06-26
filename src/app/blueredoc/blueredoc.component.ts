@@ -30,9 +30,11 @@ export class BlueredocComponent implements OnInit , AfterViewInit {
 
     if(this.projects.length >0 ) {
 
+      
       RedocTryItOut.init(
         this.activeProject.url,
-        { title: this.activeProject.name}, 
+        { title: this.activeProject.name,
+          tryItOutEnabled: false}, 
         document.getElementById("redoc-container")
       )
     }
@@ -54,11 +56,9 @@ export class BlueredocComponent implements OnInit , AfterViewInit {
   initalizeRedoc(project: Project) : void {
     $('#redoc-container').remove();
     $('#swagger-ui').remove();
+
     RedocTryItOut.init(
       project.url,
-      {
-        title: project.name
-      }, 
       document.getElementById("redoc-container")
     )
   }

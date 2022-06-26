@@ -1,3 +1,7 @@
+
+ng build && ng test --code-coverage
+npm run sonar-scanner
+
 # Redoc Dynamic
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
